@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+
+    <div class="container text-center">
+        <h1 class="display-1 gradient-text-custom big-text-custom">Sorry!</h1>
+        <br>
+        <br>
+        <p class="lead text-light">
+            {{ message }}
+        </p>
+        <a href="/contact">Try again</a>
+    </div>
+
+{% endblock %}

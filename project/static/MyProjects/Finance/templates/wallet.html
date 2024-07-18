@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Wallet
+{% endblock %}
+
+{% block main %}
+
+    <hr>
+    <h4>Current cash: {{ current_cash | usd }}</h4>
+    <hr>
+    <br>
+
+    <form action="/wallet" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="amount" placeholder="Amount to add" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Add money</button>
+    </form>
+
+{% endblock %}

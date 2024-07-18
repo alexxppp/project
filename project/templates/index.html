@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1 class="display-1 gradient-text-custom big-text-custom">Home</h1>
+    <br>
+    <br>
+
+    <div class="container about-me-section">
+        <h1 class="display-1 gradient-text-custom big-text-custom">Hello there, I'm Alex Pace</h1>
+        <br>
+        <p class="lead text-dark">
+            I am a <span class="highlight">full-stack</span>, <strong class="gradient-text-custom">back-end</strong> oriented developer, with deep experience and knowledge in <strong>Java, C, Python, and SQL</strong>.
+            I'm also a fluent developer in front-end technologies like <strong>JavaScript</strong> (experience with three.js), <strong>Flask, HTML, CSS, and Jinja</strong>.
+            I have a degree in <strong class="gradient-text-custom">Multiplatform Application Development</strong>.
+            My biggest passion is to improve my knowledge in every field, but especially in programming by learning new <strong>languages</strong> and technologies. 
+            This is why I am planning on getting a degree in <strong class="gradient-text-custom">Computer Science</strong>.
+            In my free time, I enjoy <span class="highlight">exploring</span> and <span class="highlight">traveling the world</span>.
+        </p>
+
+        <br><hr style="color: black;"><br>
+
+        <!-- Carousel Section -->
+        <div class="container container-custom-2">
+            <div id="simpleCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/Images&Files/athens-img.jpg" class="d-block w-100" alt="Athens">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/Images&Files/motorbike-img.jpg" class="d-block w-100" alt="Dolomites">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/Images&Files/stockholm-img.jpg" class="d-block w-100" alt="Stockholm">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#simpleCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#simpleCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../static/Images&Files/navagio-img.jpg" alt="Zakynthos" class="img-fluid rounded">
+                <p class="text-dark mt-3">Zakynthos for me is a special place, having visited it several times during my life, it is now one of my favourite places on earth.</p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-dark">Valencia, the city where I reside, is again an important pillar of my life. It has given me several opportunities, and it's where I started my programming journey.</p>
+                <img src="../static/Images&Files/valencia-img.jpg" alt="Valencia" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+    <hr class="line-custom"><br>
+
+    <div class="footer-custom">
+        <strong class="display-1 gradient-text-custom" style="font-size: 2rem;">More of me...</strong>
+        <br>
+        <br>
+        <a href="https://github.com/alexxppp"><img src="../static/Images&Files/github-icon.png" alt="GitHub"></a>
+        <a href="https://linkedin.com/in/alex-pace-303ba2292"><img src="../static/Images&Files/linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="../static/Images&Files/AlexPaceCV.pdf"><img src="../static/Images&Files/cv-icon.png" alt="Curriculum Vitae"></a>
+    </div>
+
+{% endblock %}

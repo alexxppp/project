@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+
+                <tr>
+                    <td class="text-start">{{ transaction['symbol'] }}</td>
+                    <td class="text-end">{{ transaction['shares'] }}</td><!--number of shares bought or sold (-shares if sold)-->
+                    <td class="text-end">{{ transaction['price_per_share'] | usd }}</td>
+                    <td class="text-end">{{ transaction['date'] }} {{ transaction['hour'] }}</td><!--((2024-07-03 14:00:15))date (year-month-day) space hour (hour:minute:second) of the transaction-->
+                </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

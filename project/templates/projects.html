@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My projects
+{% endblock %}
+
+{% block main %}
+
+    <h1 class="display-1 gradient-text-custom big-text-custom">My projects</h1>
+    <br>
+    <br>
+
+    <!--BACK-END PROJECTS-->
+    <p class="lead small-text-custom">Back-end related</p>
+    <div class="container text-dark">
+        <div class="row">
+            <div class="col-md-4 slides-custom">
+                <h4 class="text-center project-h4-custom">Neural Network</h4>
+                <a href="https://github.com/alexxppp/NeuralNetwork" class="image-container">
+                    <img src="../static/Images&Files/neuralnetwork-img.png" alt="Neural Network" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">Tap for the repo</div>
+                    </div>
+                </a>
+                <p class="small-text-custom">Neural network to identify written text built from scratch with Python (only using Numpy)</p>
+            </div>
+            <div class="col-md-4 slides-custom">
+                <h4 class="text-center project-h4-custom">Stock Predictor</h4>
+                <a href="https://github.com/alexxppp/StockPredictor" class="image-container">
+                    <img src="../static/Images&Files/stockpredictor-img.png" alt="Stock Predictor" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">Tap for the repo</div>
+                    </div>
+                </a>
+                <p class="small-text-custom">Stock predictor that utilises historic stock prices of a stock and neural networks to predict its next 20 days price.</p>
+            </div>
+            <div class="col-md-4 slides-custom">
+                <h4 class="text-center project-h4-custom">Stock Manager</h4>
+                <a href="https://github.com/alexxppp/Finance" class="image-container">
+                    <img src="../static/Images&Files/finance-img.png" alt="Finance" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">Tap for the repo</div>
+                    </div>
+                </a>
+                <p class="small-text-custom">Flask application inspired in "cs50x Finance" problem set, used to imitate stock market, with functions like buy, sell, or quote</p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--FRON-END OR FULL-STACK PROJECTS-->
+    <p class="lead small-text-custom">Front-end or Full-stack related</p>
+    <div class="container text-dark">
+        <div class="row">
+            <div class="col-md-4 slides-custom">
+                <h4 class="text-center project-h4-custom">Minesweeper</h4>
+                <a href="../static/MyProjects/Minesweeper/index.html" class="image-container">
+                    <img src="../static/Images&Files/minesweeper-img.png" alt="Minesweeper" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">Tap to play</div>
+                    </div>
+                </a>
+                <p class="small-text-custom">Simple, classic and fun Minesweeper game.</p>
+            </div>
+            <div class="col-md-4 slides-custom">
+                <h4 class="text-center project-h4-custom">Pokedex</h4>
+                <a href="../static/MyProjects/Pokedex/index.html" class="image-container">
+                    <img src="../static/Images&Files/pokedex-img.png" alt="Pokedex" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">Tap to see</div>
+                    </div>
+                </a>
+                <p class="small-text-custom">Pokedex with all the pokemons and their statistics using PokeAPI</p>
+            </div>
+            <div class="col-md-4 slides-custom">
+                <h4 class="text-center project-h4-custom">Solar System</h4>
+                <a href="../static/MyProjects/SolarSystem/index.html" class="image-container">
+                    <img src="../static/Images&Files/solarsystem-img.png" alt="Solar System" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">Tap to see</div>
+                    </div>
+                </a>
+                <p class="small-text-custom">Unfinished recreation of the Solar System using THREE.js, with scaled rotation and movement speed</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

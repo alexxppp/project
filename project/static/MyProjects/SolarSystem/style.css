@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+#program-management {
+    position: absolute;
+    z-index: 1000;
+    width: 280px;
+    height: 100%;
+    background-color: transparent;
+    border-right: solid 4px ghostwhite;
+    color: ghostwhite;
+}
+
+#program-management div {
+    height: 100px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#camera-options {
+    height: 30px;
+    width: 90px;
+}
+
+#program-management input {
+    height: 30px;
+    width: 90px;
+}
+
+#program-management button {
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+    border: solid 2px lightgray;
+    background-color: ghostwhite;
+    color: black;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+#reset-button button {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 2px lightgray;
+    background-color: ghostwhite;
+    color: black;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+#reset-button button:hover {
+    background-color: lightgray;
+}

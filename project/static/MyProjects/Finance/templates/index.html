@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <!--TODO's-->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+
+        <!--THIS IS WHAT IS GOING TO CHANGE BASED ON THE STOCKS THAT THE USER HAS-->
+        <tbody>
+            {% for stock in owned %}
+            <tr>
+                <td class="text-start">{{ stock['symbol'] }}</td>
+                <td class="text-end">{{ stock['shares'] }}</td>
+                <td class="text-end">{{ stock['price_per_share'] | usd }}</td>
+                <td class="text-end">{{ stock['total_value'] | usd }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">Cash</td>
+                <td class="border-0 text-end">{{ current_cash | usd }}</td> <!--CURRENT USER'S CASH-->
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">TOTAL</td>
+                <td class="border-0 w-bold text-end">{{ total_networth | usd }}</td> <!--CURRENT USER'S NET WORTH-->
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
