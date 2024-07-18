@@ -1,6 +1,6 @@
 # VARIETY OF PROJECTS
 
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/fWfSn0LPnak
 
 ## Description:
 
